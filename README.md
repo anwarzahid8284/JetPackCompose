@@ -13,7 +13,5 @@ This project demonstrates how to create a custom toolbar using Jetpack Compose i
 ![toolbar](https://github.com/anwarzahid8284/JetPackCompose/assets/66475556/81a991ff-0873-4c95-80df-3f3b93c1263f)
 
 ## Getting Started
+   [Clone Project](https://example.com](https://github.com/anwarzahid8284/JetPackCompose.git) "Clone Project")
 
-1. Clone the repository:
-   ```sh
-   git clone <a href="https://github.com/anwarzahid8284/JetPackCompose.git">https://github.com/anwarzahid8284/JetPackCompose.git</a>
