@@ -51,6 +51,5 @@ class MainActivity : ComponentActivity() {
 fun GreetingPreview() {
     JetpackCompseTheme {
         AppToolbar()
-
     }
 }
