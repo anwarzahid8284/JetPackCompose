@@ -1,4 +1,4 @@
-# Toolbar Jetpack Compose
+# Toolbar with Jetpack Compose
 
 This project demonstrates how to create a custom toolbar using Jetpack Compose in Android. The toolbar includes various UI elements such as an ImageView, title, and action icons, showcasing the flexibility and power of Jetpack Compose for modern Android development.
 
@@ -9,10 +9,41 @@ This project demonstrates how to create a custom toolbar using Jetpack Compose i
 - Easy to adapt and extend for various use cases
 - Clean and concise code structure
 
-## Screenshot
-![toolbar](https://github.com/anwarzahid8284/JetPackCompose/assets/66475556/81a991ff-0873-4c95-80df-3f3b93c1263f)
+## Screenshots
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="https://github.com/anwarzahid8284/JetPackCompose/assets/66475556/81a991ff-0873-4c95-80df-3f3b93c1263f" alt="toolbar" style="width: 45%;">
+    <img src="https://github.com/anwarzahid8284/JetPackCompose/assets/66475556/d2500b02-19c9-46a1-805f-3afd96572769" alt="login screen" style="width: 45%;">
+</div>
 
 ## Getting Started
-[Link](https://github.com/anwarzahid8284/JetPackCompose.git "Title text")
+
+To get started with this project, you can clone the repository using the following link: [JetPackCompose GitHub Repository](https://github.com/anwarzahid8284/JetPackCompose.git "JetPackCompose Repository")
+
+## Key Components of the Toolbar
+
+Here's an example of how you can create a custom toolbar using Jetpack Compose:
+
+```kotlin
+@Composable
+fun CustomToolbar(
+    title: String,
+    onNavigationIconClick: () -> Unit,
+    actions: @Composable RowScope.() -> Unit = {}
+) {
+    TopAppBar(
+        title = { Text(text = title) },
+        navigationIcon = {
+            IconButton(onClick = onNavigationIconClick) {
+                Icon(Icons.Default.ArrowBack, contentDescription = null)
+            }
+        },
+        actions = actions,
+        backgroundColor = MaterialTheme.colors.primary,
+        contentColor = Color.White,
+        elevation = AppBarDefaults.TopAppBarElevation
+    )
+}
+
 
 
