@@ -16,6 +16,10 @@ This project demonstrates how to create a custom toolbar using Jetpack Compose i
     <img src="https://github.com/anwarzahid8284/JetPackCompose/assets/66475556/d2500b02-19c9-46a1-805f-3afd96572769" alt="login screen" style="width: 45%;">
 </div>
 
+## Recycler view in Jetpack compose
+
+https://github.com/user-attachments/assets/a463015d-e379-486c-842e-aa32fb2a3d12
+
 ## Getting Started
 
 To get started with this project, you can clone the repository using the following link: [JetPackCompose GitHub Repository](https://github.com/anwarzahid8284/JetPackCompose.git "JetPackCompose Repository")
@@ -32,18 +36,4 @@ fun CustomToolbar(
     actions: @Composable RowScope.() -> Unit = {}
 ) {
     TopAppBar(
-        title = { Text(text = title) },
-        navigationIcon = {
-            IconButton(onClick = onNavigationIconClick) {
-                Icon(Icons.Default.ArrowBack, contentDescription = null)
-            }
-        },
-        actions = actions,
-        backgroundColor = MaterialTheme.colors.primary,
-        contentColor = Color.White,
-        elevation = AppBarDefaults.TopAppBarElevation
-    )
-}
-
-
-
+        title
